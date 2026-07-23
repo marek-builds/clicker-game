@@ -1,2 +1,10 @@
 <h1>My Clicker Game</h1>
-<button>Click me!</button>
+<p>Score: <span id="score">0</span></p>
+<button onclick="addPoint()">Click me!</button>
+<script>
+let score = 0;
+function addPoint() {
+  score = score + 1;
+  document.getElementById("score").textContent = score;
+}
+</script>
